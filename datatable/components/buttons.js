@@ -19,7 +19,10 @@ const optionsOnClick = (event, id) => {
   event.stopPropagation();
 
   document.querySelectorAll(".options-menu").forEach((menu) => {
-    menu.remove();
+    menu.classList.add("fade-out");
+    menu.addEventListener("animationend", () => {
+      menu.remove();
+    });
   });
 
   const optionsMenu = document.createElement("div");
@@ -34,7 +37,18 @@ const optionsOnClick = (event, id) => {
   document.body.appendChild(optionsMenu);
 
   const handleClickOutside = (event) => {
-    optionsMenu.remove();
+    // Add the fade-out class to trigger the fade-out animation
+    optionsMenu.classList.add("fade-out");
+
+    // Define the animation end handler
+    const handleAnimationEnd = () => {
+      optionsMenu.removeEventListener("animationend", handleAnimationEnd); // Clean up the event listener
+      optionsMenu.remove(); // Remove the element from the DOM after the animation completes
+    };
+
+    // Attach the animation end listener to ensure it runs after the fade-out animation
+    optionsMenu.addEventListener("animationend", handleAnimationEnd);
+
     document.removeEventListener("click", handleClickOutside);
   };
 
