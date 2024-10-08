@@ -1,0 +1,6 @@
+*[dir="rtl"] table.dataTable thead th,
+*[dir="rtl"] table.dataTable thead td,
+*[dir="rtl"] table.dataTable tfoot th,
+*[dir="rtl"] table.dataTable tfoot td {
+  text-align: right;
+}
