@@ -1,12 +1,3 @@
-const Status = {
-  INACTIVE: 0,
-  ACTIVE: 1,
-};
-
-function statusText(data) {
-  return data === Status.ACTIVE ? "نشط" : "غير نشط";
-}
-
 const data = [
   new Device(
     1,
