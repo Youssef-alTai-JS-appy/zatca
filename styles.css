@@ -5,11 +5,11 @@ body {
 }
 
 tr:nth-child(odd) {
-  background-color: #f4f4f4;
+  background-color: #f7f7f7 !important;
 }
 
 tr:nth-child(even) {
-  background-color: #ffffff;
+  background-color: #ffffff !important;
 }
 
 .page {
