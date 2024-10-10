@@ -31,4 +31,33 @@ const data = [
   ),
 ];
 
-const documents = [];
+const documents = [
+  new ZatcaDocument(
+    97,
+    161,
+    new Date("2024-10-08T19:59:15"),
+    "B2B",
+    138,
+    0.0,
+    120.0,
+    18.0,
+    138.0,
+    "Returned"
+  ),
+  ...Array.from(
+    { length: 50 },
+    (_, i) =>
+      new ZatcaDocument(
+        97 + i,
+        161 + i,
+        new Date(Date.now() + i * 1000 * 60 * 60 * 24),
+        "B2B",
+        138,
+        0.0,
+        120.0,
+        18.0,
+        138.0,
+        "Returned"
+      )
+  ),
+];

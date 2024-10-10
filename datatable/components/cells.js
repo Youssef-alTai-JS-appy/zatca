@@ -28,6 +28,12 @@ const statusCell = (status) => `
   </span>
 `;
 
+const documentStatusCell = (status) => `
+  <span class="px-4 py-2 rounded-full bg-blue-100 text-blue-700">
+    ${documentStatusText(status)}
+  </span>
+`;
+
 // TODO: Use the ID
 const actionsCell = (data) => `
 ${createOptionsButton(data.deviceNumber)}
