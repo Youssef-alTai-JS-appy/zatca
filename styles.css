@@ -4,6 +4,13 @@ body {
   align-items: center;
 }
 
+th {
+  font-weight: bold;
+  text-align: left;
+  padding: 10px;
+  background-color: #bfdbfe !important;
+}
+
 tr:nth-child(odd) {
   background-color: #f7f7f7 !important;
 }

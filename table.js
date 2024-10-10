@@ -87,8 +87,23 @@ const table = $("#example").DataTable({
   ],
 });
 
-// table.on("click", "td", function () {
-//   var rowIdx = table.cell(this).index().row;
-//   var rowData = table.row(rowIdx).data();
-//   console.log(rowData);
-// });
+const documentsTable = $("#documentsTable").DataTable({
+  language: {
+    url: "https://cdn.datatables.net/plug-ins/2.1.8/i18n/ar.json",
+  },
+
+  scrollX: true,
+  data: documents,
+
+  columnDefs: [],
+  columns: [
+    {
+      data: null,
+      defaultContent: `
+        ${editButton}
+        ${deleteButton}
+      `,
+      orderable: false,
+    },
+  ],
+});

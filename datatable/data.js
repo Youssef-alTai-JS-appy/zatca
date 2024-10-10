@@ -30,3 +30,5 @@ const data = [
       )
   ),
 ];
+
+const documents = [];

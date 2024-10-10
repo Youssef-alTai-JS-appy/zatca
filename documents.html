@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl"></html>
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zatca - الأجهزة</title>
-
+    <title>الفواتير</title>
+    
     <link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.tailwindcss.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="datatable/i18n.css">
@@ -27,7 +27,9 @@
                 </div>
                 <ul class="flex items-center gap-8">
                     <li>
-                        <a href="/">الأجهزة</a>
+                        <a href="/">
+                            الأجهزة
+                        </a>
                     </li>
                     <li>
                         <a href="/documents.html">
@@ -36,7 +38,9 @@
                     </li>
                 </ul>
             </nav>
-            <h2 class="text-lg font-bold mx-auto">الأجهزة</h1>
+            <h2 class="text-lg font-bold mx-auto">
+                الفواتير
+            </h1>
             <header class="flex justify-between items-center py-4 gap-2">
                 <div class="flex items-center w-full max-w-xl justify-end gap-1 pr-4 border rounded-3xl stroke-gray-400"> 
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="stroke-inherit" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
@@ -48,7 +52,7 @@
                     إنشاء جهاز
                 </button>
             </header>
-            <table id="example" class="display" style="width:100%"></table>
+            <table id="documentsTable" class="display" style="width:100%"></table>
         </main>
     </div>
     <script src="datatable/components/icons.js"></script>

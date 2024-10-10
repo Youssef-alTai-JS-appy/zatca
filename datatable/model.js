@@ -22,3 +22,30 @@ const statusText = (status) => {
       return "غير معروف";
   }
 };
+
+// Invoice No,	System Invoice No,	Invoice Date,	Invoice Type,	Payed	Discount,	Invoice Net,	Invoice Tax,	Subnet Total plus tax,	Invoice Status
+class ZatcaDocument {
+  constructor(
+    invoiceNo,
+    systemInvoiceNo,
+    invoiceDate,
+    invoiceType,
+    payed,
+    discount,
+    invoiceNet,
+    invoiceTax,
+    subnetTotalPlusTax,
+    invoiceStatus
+  ) {
+    this.invoiceNo = invoiceNo;
+    this.systemInvoiceNo = systemInvoiceNo;
+    this.invoiceDate = invoiceDate;
+    this.invoiceType = invoiceType;
+    this.payed = payed;
+    this.discount = discount;
+    this.invoiceNet = invoiceNet;
+    this.invoiceTax = invoiceTax;
+    this.subnetTotalPlusTax = subnetTotalPlusTax;
+    this.invoiceStatus = invoiceStatus;
+  }
+}
