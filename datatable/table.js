@@ -87,7 +87,7 @@ const documentsTable = $("#documentsTable").DataTable({
     },
     {
       targets: 10,
-      render: (data) => actionsCell(data),
+      render: (data) => documentsActionsCell(data),
     },
   ],
   columns: [
@@ -140,4 +140,5 @@ const documentsTable = $("#documentsTable").DataTable({
 
 $("#searchBar").on("keyup", function () {
   table.search(this.value).draw();
+  documentsTable.search(this.value).draw();
 });

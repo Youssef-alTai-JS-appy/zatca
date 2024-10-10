@@ -38,3 +38,7 @@ const documentStatusCell = (status) => `
 const actionsCell = (data) => `
 ${createOptionsButton(data.deviceNumber)}
 `;
+
+const documentsActionsCell = (data) => `
+${createDocumentOptionsButton(data.invoiceNo)}
+`;
